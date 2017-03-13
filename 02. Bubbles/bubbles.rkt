@@ -30,7 +30,6 @@
 ;; Data Definition
 ;; ============================
 
-
 (define-struct bubble (x y size style color))
 ;; Bubble is (make-bubble Natural Natural Natural String String)
 ;; - x is x coordinate of a Bubble
@@ -55,7 +54,7 @@
 
 ;; ListOfBubble is one of:
 ;; - empty
-;; (cons Bubble ListOfBubble)
+;; - (cons Bubble ListOfBubble)
 ;; Interpr. A list of Bubbles of different positions, sizes, and colors
 
 (define LOB0 empty)
@@ -72,9 +71,9 @@
               (fn-for-lob (rest lob)))]))
 
 ;; Template rules used:
-;; one of 2 cases:
-;; - atomic distinct: empty
-;; - compound data: (cons Circle ListOfCircle)
+;; - one of 2 cases:
+;; -- atomic distinct: empty
+;; -- compound data: (cons Circle ListOfCircle)
 ;; - reference: (first loc)
 ;; - self-reference: (rest loc) is ListOfCircle
 
@@ -82,7 +81,6 @@
 ;; ============================
 ;; Functions
 ;; ============================
-
 
 ;; ListOfBubble -> ListOfBubble
 ;; Animate the scene, random Bubbles pop up as spacebar is pressed
