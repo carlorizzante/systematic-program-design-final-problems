@@ -27,4 +27,7 @@ Bubbles of various sizes and colors pop up and fade away at the pressure of the 
 An interesting experiment redefining a custom set of Natural numbers (more precisely an equivalent representation) and relative methods to work with it.
 
 ## 04. Helpers
-A small set of methods to support a sorting function operating on a list of images of various sizes.
+A small set of methods to support a various set of functions operating on lists.
+- Blobs
+- Pyramid
+- Sorting
