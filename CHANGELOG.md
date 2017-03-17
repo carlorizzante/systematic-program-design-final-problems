@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.3.0] - Binary Search Trees - 2017-03-17
+### Added
+- 05. Trees/binary-search-tree.rkt
+
 ## [0.2.1] - Helpers, part II - 2017-03-13
 ### Added
 - 04. Helpers/pyramid.rkt

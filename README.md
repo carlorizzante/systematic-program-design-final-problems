@@ -7,11 +7,15 @@ The entire SPD path has been recently restructured into a new set of 6 parts.
 
 [Software Development](https://www.edx.org/micromasters/software-development)
 
+## Versioning
+Systematic Program Design 0.3.0
+
 ## Index
 - 01. Lander
 - 02. Bubbles
 - 03. Naturals
 - 04. Helpers
+- 05. Trees
 
 ## 01. Lander
 Assignment involving Compound data.
@@ -29,5 +33,8 @@ An interesting experiment redefining a custom set of Natural numbers (more preci
 ## 04. Helpers
 A small set of methods to support a various set of functions operating on lists.
 - Blobs
-- Pyramid
+- Pyramid & pyramid-random
 - Sorting
+
+## 05. Trees
+Working with Binary Search Trees. A proper BST data definition following the SPD method, and a set of functions to work with Binary Search Trees like "insert", "lookup", and "balance-factor".
