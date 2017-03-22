@@ -1,4 +1,6 @@
 # Systematic Program Design - Final Problems
+Release 0.4.0
+
 A collection of final projects while studying Systematic Program Design, the most interesting bits anyway.
 
 The programs are currently written in BSL using Dr.Racket, since those are the language and the tool used to teach Systematic Program Design at the University of British Columbia, along with the corresponding UBCx course.
@@ -7,15 +9,13 @@ The entire SPD path has been recently restructured into a new set of 6 parts.
 
 [Software Development](https://www.edx.org/micromasters/software-development)
 
-## Versioning
-Systematic Program Design 0.3.0
-
 ## Index
 - 01. Lander
 - 02. Bubbles
 - 03. Naturals
 - 04. Helpers
 - 05. Trees
+- 06. Mutual Reference
 
 ## 01. Lander
 Assignment involving Compound data.
@@ -38,3 +38,6 @@ A small set of methods to support a various set of functions operating on lists.
 
 ## 05. Trees
 Working with Binary Search Trees. A proper BST data definition following the SPD method, and a set of functions to work with Binary Search Trees like "insert", "lookup", and "balance-factor".
+
+## 06. Mutual Reference
+Working with data with self and mutual reference.

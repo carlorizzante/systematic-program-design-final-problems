@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.4.0] - Mutual Reference - 2017-03-22
+### Added
+- 06. Mutual Reference/file-system.rkt
+- 06. Mutual Reference/genealogy.rkt
+
 ## [0.3.0] - Binary Search Trees - 2017-03-17
 ### Added
 - 05. Trees/binary-search-tree.rkt
