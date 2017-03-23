@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.5.0
+Release 0.6.0
 
 A collection of final projects while studying Systematic Program Design, the most interesting bits anyway.
 
@@ -17,6 +17,7 @@ The entire SPD path has been recently restructured into a new set of 6 parts.
 - 05. Trees
 - 06. Mutual Reference
 - 07. Crossed Data - Two One-of Types
+- 08. Locals
 
 ## 01. Lander
 Assignment involving Compound data.
@@ -45,3 +46,6 @@ Working with data with self and mutual reference.
 
 ## 07. Crossed Data - Two One-of Types
 Functions operating on crossed data, and relative templates. The key here is to first visualize how the problem can be solved, and to identify areas that can be grouped or simplified.
+
+## 08. Locals
+Lexical scope and encapsulation allow for a cleaner code, packing helpers within the function that depends from them, avoiding at the same time to pollute the global scope. Locals may also improve performances reducing the computation load.

@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.6.0 - Locals - 2017-03-23
+### Added
+- 06. Mutual Reference/genealogy.rkt
+- 08. Locals/file-system-revised-1.rkt
+- 08. Locals/file-system-revised-2.rkt
+- 08. Locals/performances.rkt
+- 08. Locals/sort.rkt
+
 ## 0.5.0 - Crossed Data - 2017-03-23
 ### Added
 - 07. Crossed Data/binarytree-path.rkt
@@ -14,7 +22,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.4.0] - Mutual Reference - 2017-03-22
 ### Added
 - 06. Mutual Reference/file-system.rkt
-- 06. Mutual Reference/genealogy.rkt
 
 ## [0.3.0] - Binary Search Trees - 2017-03-17
 ### Added
