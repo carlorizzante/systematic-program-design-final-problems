@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.5.0 - Crossed Data - 2017-03-23
+### Added
+- 07. Crossed Data/binarytree-path.rkt
+- 07. Crossed Data/match.rkt
+- 07. Crossed Data/merge.rkt
+- 07. Crossed Data/prefix.rkt
+
 ## [0.4.0] - Mutual Reference - 2017-03-22
 ### Added
 - 06. Mutual Reference/file-system.rkt

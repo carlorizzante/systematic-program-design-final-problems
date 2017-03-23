@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.4.0
+Release 0.5.0
 
 A collection of final projects while studying Systematic Program Design, the most interesting bits anyway.
 
@@ -16,6 +16,7 @@ The entire SPD path has been recently restructured into a new set of 6 parts.
 - 04. Helpers
 - 05. Trees
 - 06. Mutual Reference
+- 07. Crossed Data - Two One-of Types
 
 ## 01. Lander
 Assignment involving Compound data.
@@ -41,3 +42,6 @@ Working with Binary Search Trees. A proper BST data definition following the SPD
 
 ## 06. Mutual Reference
 Working with data with self and mutual reference.
+
+## 07. Crossed Data - Two One-of Types
+Functions operating on crossed data, and relative templates. The key here is to first visualize how the problem can be solved, and to identify areas that can be grouped or simplified.
