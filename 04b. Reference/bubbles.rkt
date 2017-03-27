@@ -8,7 +8,7 @@
 ; of various random sizes and colors to pop on screen, and quickly fade away.
 ;
 ; Keys:
-; - spacebar > pops up a new random bubble
+; - " " > pops up a new random bubble
 
 
 ;; ============================

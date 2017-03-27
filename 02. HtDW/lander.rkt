@@ -6,8 +6,8 @@
 ; representation of a lunar lander to the bottom of the canvas.
 ;
 ; Keys:
-; - spacebar > trusters, accelerate the ship upwards
-; - r        > reset the game
+; - " " > trusters, accelerate the ship upwards
+; - "r" > reset the game
 
 
 ;; =====================

@@ -4,7 +4,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## 0.6.0 - Locals - 2017-03-23
+## [0.7.0] - Abstraction - 2017-03-27
+### Changed
+- Content reorganized in new chapters to better follow the three SPD courses' path
+
+### Added
+- 08. Abstraction/built-in.rkt
+- 08. Abstraction/fold-dir.rkt
+- 08. Abstraction/parameterization.rkt
+- 08. Abstraction/wide-only.rkt
+
+## [0.6.0] - Locals - 2017-03-23
 ### Added
 - 06. Mutual Reference/genealogy.rkt
 - 08. Locals/file-system-revised-1.rkt
@@ -12,7 +22,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - 08. Locals/performances.rkt
 - 08. Locals/sort.rkt
 
-## 0.5.0 - Crossed Data - 2017-03-23
+## [0.5.0] - Crossed Data - 2017-03-23
 ### Added
 - 07. Crossed Data/binarytree-path.rkt
 - 07. Crossed Data/match.rkt

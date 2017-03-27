@@ -1,7 +1,7 @@
 ;
 ; An interesting experiment, using '!' as fundamental unit in a custom made counting system.
 ; Therefore a custom-made NATURAL is a list of '!' (or an empty list for the entity zero).
-; The series of functions below are implementation of a rudimentary algebric set of rules
+; The series of functions below are implementation of a rudimentary algebraic set of rules
 ; to work with the data definition of NATURAL.
 ;
 ; Methods:
