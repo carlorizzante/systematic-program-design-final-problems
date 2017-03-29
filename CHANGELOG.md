@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [UNRELEASED]
+### Changed
+- Edited README.md with new chapters' descriptions.
+
+### Added
+- 09a. Generattive Recursion/cantor.rkt
+- 09a. Generattive Recursion/fractal.rkt
+- 09a. Generattive Recursion/sierpinski.rkt
+
 ## [0.7.0] - Abstraction - 2017-03-27
 ### Changed
 - Content reorganized in new chapters to better follow the three SPD courses' path
