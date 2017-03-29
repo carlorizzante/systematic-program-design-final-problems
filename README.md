@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.7.0
+Release 0.8.0
 
 A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway.
 

@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [UNRELEASED]
+## [0.8.0] - Generative Recursion - 2017-03-29
 ### Changed
 - Edited README.md with new chapters' descriptions.
 
