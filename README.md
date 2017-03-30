@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.8.0
+Release 0.9.0
 
 A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway.
 
@@ -62,4 +62,7 @@ Generative Recursion is similar to Structural Recursion: a function calls itself
 
 Generative Recursion is typically used to create fractal images.
 
-## 09b. Search
+## 09b. Search & Lambda
+Lambda are anonymous functions declared at the moment of necessity, that do not need to be kept in memory once the task the serve is accomplished. Lambda are an efficient alternative to helpers and local functions when the body of the function itself is straight forward and easier to understand (one-liner, a function simple enough to be clearly written in one single line).
+
+A note about templates: a template is what I know about the body of the function based on what it consumes and its basic behavior, before getting into the details.
