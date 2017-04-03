@@ -4,14 +4,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.9.0] - Search & Lambda - 2017-3-30
+## [0.10.0] - Accumulators - 2017-04-03
+### Added
+- 10. Accumulators/average.rkt
+- 10. Accumulators/dropn.rkt
+- 10. Accumulators/number-list.rkt
+- 10. Accumulators/skip1.rkt
+- 10. Accumulators/skipn.rkt
+- 10. Accumulators/tail-recursion.rkt
+
+## [0.9.0] - Search & Lambda - 2017-03-30
 ### Added
 - 09b. Search & Lambda/lambda.rkt
 - 09b. Search & Lambda/sudoku.rkt
 
 ## [0.8.0] - Generative Recursion - 2017-03-29
 ### Changed
-- Edited README.md with new chapters' descriptions.
+- Edited README.md - new chapters' descriptions.
 
 ### Added
 - 09a. Generattive Recursion/cantor.rkt

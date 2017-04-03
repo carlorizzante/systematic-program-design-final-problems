@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.9.0
+Release 0.10.0
 
 A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway.
 
@@ -24,6 +24,7 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 08 . Abstraction
 - 09a. Generative Recursion
 - 09b. Search & Lamba
+- 10.  Accumulators
 
 ## 02. HtDW
 Lander is a very basic interactive video game where the player has to land a block on the bottom side of a canvas against gravity.
@@ -66,3 +67,15 @@ Generative Recursion is typically used to create fractal images.
 Lambda are anonymous functions declared at the moment of necessity, that do not need to be kept in memory once the task the serve is accomplished. Lambda are an efficient alternative to helpers and local functions when the body of the function itself is straight forward and easier to understand (one-liner, a function simple enough to be clearly written in one single line).
 
 A note about templates: a template is what I know about the body of the function based on what it consumes and its basic behavior, before getting into the details.
+
+## 10. Accumulators
+In natural recursion data is manipulated in chunks, and each iteration of the recursive process receives a smaller and smaller chunk to work on. That process loses part of the information, for the recursive function is agnostic of where it is in the process.
+
+Accumulators can be seen as state being passed through the entire recursive process so that that part of information isn't lost. The next iteration will receive information about where it stands in the ongoing recursive path.
+
+Another important concept is Tail Recursion that affects performances in programs that have to manipulate large amount of data.
+
+This module shows applications for three kinds of accumulators:
+1. Context preserving accumulators - to preserve context lost in natural recursion.
+2. Result-so-far accumulators - to help achieve tail recursion by eliminating the need for pending operations.
+3. Worklist accumulators - to help achieve tail recursion by eliminating the need to retain future recursive calls in pending operations.
