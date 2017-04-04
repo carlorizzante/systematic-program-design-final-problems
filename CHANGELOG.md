@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.11.1] - 2017-04-03
+### Changed
+- README.md - typos
+
 ## [0.11.0] - Graphs - 2017-04-04
 ### Added
 - 11. Graphs/graphs.rkt

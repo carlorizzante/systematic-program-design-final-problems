@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.11.0
+Release 0.11.1
 
 A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway.
 
@@ -23,12 +23,18 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 07b. Local
 - 08 . Abstraction
 - 09a. Generative Recursion
-- 09b. Search & Lamba
-- 10.  Accumulators
-- 11. Graphs
+- 09b. Search & Lambda
+- 10 .  Accumulators
+- 11 . Graphs
+
+## 01. HtDF + HtDD
+In progress...
 
 ## 02. HtDW
 Lander is a very basic interactive video game where the player has to land a block on the bottom side of a canvas against gravity.
+
+## 03. Compound Data
+In progress...
 
 ## 04a. Self Reference
 When working on Arbitrary-sized information, since we do not know the size of the information, we can often apply recursion in order to handle the data. In order to do so, data has to be properly structured and self-referenced.
