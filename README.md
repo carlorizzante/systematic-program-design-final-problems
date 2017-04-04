@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.10.0
+Release 0.11.0
 
 A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway.
 
@@ -25,6 +25,7 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 09a. Generative Recursion
 - 09b. Search & Lamba
 - 10.  Accumulators
+- 11. Graphs
 
 ## 02. HtDW
 Lander is a very basic interactive video game where the player has to land a block on the bottom side of a canvas against gravity.
@@ -79,3 +80,8 @@ This module shows applications for three kinds of accumulators:
 1. Context preserving accumulators - to preserve context lost in natural recursion.
 2. Result-so-far accumulators - to help achieve tail recursion by eliminating the need for pending operations.
 3. Worklist accumulators - to help achieve tail recursion by eliminating the need to retain future recursive calls in pending operations.
+
+## 11. Graphs
+Information may naturally organize into trees of various kinds. When elements and/or properties of an information set are interrelated with more than one vector to the parent elements, we say that they take the form of graphs. Those data structures are generally defined as cyclic or directed graphs but there are of course acyclic graphs as well where data does not create opportunities for infinite loops.
+
+Graphs help representing complex data structures like maps, wiring diagrams, even labyrinths. In order to work on graphs we need to define a new type of data generically called cyclic data as well as develop functions capable of working on this new form of data.

@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.11.0] - Graphs - 2017-04-04
+### Added
+- 11. Graphs/graphs.rkt
+- 11. Graphs/rooms.rkt
+
 ## [0.10.0] - Accumulators - 2017-04-03
 ### Added
 - 10. Accumulators/average.rkt
