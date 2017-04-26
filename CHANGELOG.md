@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.2.0] - 2017-04-26
+### Added
+- 01a. BSL Fundamentals/bsl-fundamentals.rkt
+- 01a. BSL Fundamentals/evaluation.rkt
+
+### Changed
+- README.md - restart with the new edition of the entire course path, 2017
+
 ## [0.11.1] - 2017-04-03
 ### Changed
 - README.md - typos

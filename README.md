@@ -1,15 +1,16 @@
 # Systematic Program Design - Final Problems
-Release 0.11.1
+Release 0.2.0
 
 A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway.
 
-The code is currently written in BSL/ISL since those are the languages and used to teach Systematic Program Design at the University of British Columbia, along with the corresponding UBCx course. You can run these codes with Dr.Racket.
+The code is currently written in BSL/ISL/ASL since those are the languages used to teach Systematic Program Design at the University of British Columbia, along with the corresponding UBCx course. To run the codes presented in this repo you can use Dr.Racket.
 
 Note that the entire SPD path has been recently restructured into a new set of 6 parts, and it may not match the path of the old three courses.
 
 [Software Development](https://www.edx.org/micromasters/software-development)
 
 ## Index
+- 01a. BSL Fundamentals
 - 01 . HtDF + HtDD
 - 02 . HtDW
 - 03 . Compound Data
@@ -26,6 +27,11 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 09b. Search & Lambda
 - 10 .  Accumulators
 - 11 . Graphs
+
+## 01a. BSL Fundamentals
+Systematic Program Design is taught through a language called BSL at first, for Beginner Student Language. The language will later be extended to Intermediary Student Language, and Advanced Student Language.
+
+This first chapter demonstrates some basic aspects of the language, like primitives, constants, functions and function arguments, and the use of images as data.
 
 ## 01. HtDF + HtDD
 In progress...
