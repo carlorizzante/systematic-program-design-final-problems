@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [UNRELEASED]
+## [0.2.1] - 2017-04-27
 ### Added
 - 01b. HtDF, How to Design Functions/area.rkt
 - 01b. HtDF, How to Design Functions/images.rkt
@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - README.md - New chapter for HtDF
+- README.md - Removed chapter "01. HtDF + HtDD"
 
 ## [0.2.0] - 2017-04-26
 ### Added

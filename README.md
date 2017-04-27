@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.2.0
+Release 0.2.1
 
 A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway - and the most relevant concepts in Systematic Program Design in nutshells.
 
@@ -12,7 +12,7 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 ## Index
 - 01a. BSL Fundamentals
 - 01b. HtDF, How to Design Functions
-- 01 . HtDF + HtDD
+- 02 . HtDD, How to Design Data
 - 02 . HtDW
 - 03 . Compound Data
 - 04a. Self Reference
@@ -58,7 +58,7 @@ After the tests, at least initially, functions are taken from an inventory of te
 ### Function body
 Once tests and stub are in place and we verified that all run properly (though tests are expected to fail at this point), the template is edited or copied to write the function body which will be run against the tests to verify that the function satisfies the requirements.
 
-## 01. HtDF + HtDD
+## 02. HtDD, How to Design Data
 In progress...
 
 ## 02. HtDW
