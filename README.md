@@ -1,16 +1,17 @@
 # Systematic Program Design - Final Problems
 Release 0.2.0
 
-A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway.
+A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway - and the most relevant concepts in Systematic Program Design in nutshells.
 
 The code is currently written in BSL/ISL/ASL since those are the languages used to teach Systematic Program Design at the University of British Columbia, along with the corresponding UBCx course. To run the codes presented in this repo you can use Dr.Racket.
 
-Note that the entire SPD path has been recently restructured into a new set of 6 parts, and it may not match the path of the old three courses.
+Note that the entire SPD path has been recently restructured into a new set of 6 courses.
 
 [Software Development](https://www.edx.org/micromasters/software-development)
 
 ## Index
 - 01a. BSL Fundamentals
+- 01b. HtDF, How to Design Functions
 - 01 . HtDF + HtDD
 - 02 . HtDW
 - 03 . Compound Data
@@ -25,13 +26,37 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 08 . Abstraction
 - 09a. Generative Recursion
 - 09b. Search & Lambda
-- 10 .  Accumulators
+- 10 . Accumulators
 - 11 . Graphs
 
 ## 01a. BSL Fundamentals
 Systematic Program Design is taught through a language called BSL at first, for Beginner Student Language. The language will later be extended to Intermediary Student Language, and Advanced Student Language.
 
 This first chapter demonstrates some basic aspects of the language, like primitives, constants, functions and function arguments, and the use of images as data.
+
+## 01b. HtDF, How to Design Functions
+Functions are written systematically, though a series of steps that define, describe, and prototype the desired result. These three components are Signature, Purpose, and Stub.
+
+The Signature expresses what types and arguments the function will accept and/or require.
+
+The Purpose describe the expected result of the function.
+
+And finally the Stub prototypes the function, offering an initial mockup to be used against unit tests.
+
+Each step poses the basis for the subsequent step, down to the Stub that puts the basis for the tests. Tests are run initially against the Stub, and they are supposed to fail, but at the same time run correctly.
+
+If we wrote the tests correctly, we may have good insides on how the function should perform and what operations will be involved in order to obtain the expected result.
+
+Once stub and tests have been written, it is fundamental to run the code to verify that the code has been written correctly up to this point. Run the code regularly to identify bugs and errors. That way errors will be corrected with ease without allowing them to knot your code into an impossible mess.
+
+### Tests
+Tests are run right after the stub has been written so that to assure they are well formed. Tests have to offer full coverage of the various possibilities the final function has to take in account. This is a crucial point, there may be corner cases or boundary conditions to include.
+
+### Template
+After the tests, at least initially, functions are taken from an inventory of templates which are chosen in base of the Signature. The template offers an initial body for the function and help writing efficient code.
+
+### Function body
+Once tests and stub are in place and we verified that all run properly (though tests are expected to fail at this point), the template is edited or copied to write the function body which will be run against the tests to verify that the function satisfies the requirements.
 
 ## 01. HtDF + HtDD
 In progress...

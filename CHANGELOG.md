@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [UNRELEASED]
+### Added
+- 01b. HtDF, How to Design Functions/area.rkt
+- 01b. HtDF, How to Design Functions/images.rkt
+- 01b. HtDF, How to Design Functions/larger.rkt
+- 01b. HtDF, How to Design Functions/strings.rkt
+
+### Changed
+- README.md - New chapter for HtDF
+
 ## [0.2.0] - 2017-04-26
 ### Added
 - 01a. BSL Fundamentals/bsl-fundamentals.rkt
