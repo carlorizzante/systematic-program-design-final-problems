@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.2.3] - 2017-04-28
+## [0.15.0] - 2017-04-28
 ### Added
 - 03a. HtDW, How to Design Worlds/lander.rkt
 - 03a. HtDW, How to Design Worlds/slider.rkt
@@ -12,7 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Updated
 - README.md - updates "03a. HtDW, How to Design Worlds"
 
-## [0.2.2] - 2017-04-28
+## [0.14.0] - 2017-04-28
 ### Added
 - 02. HtDD, How to Design Data/cities.rkt
 - 02. HtDD, How to Design Data/conditionals.rkt
@@ -26,7 +26,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - README.md - Added chapter "- 02 . HtDD, How to Design Data"
 
-## [0.2.1] - 2017-04-27
+## [0.13.0] - 2017-04-27
 ### Added
 - 01b. HtDF, How to Design Functions/area.rkt
 - 01b. HtDF, How to Design Functions/images.rkt
@@ -37,7 +37,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - README.md - New chapter for HtDF
 - README.md - Removed chapter "01. HtDF + HtDD"
 
-## [0.2.0] - 2017-04-26
+## [0.12.0] - 2017-04-26
 ### Added
 - 01a. BSL Fundamentals/bsl-fundamentals.rkt
 - 01a. BSL Fundamentals/evaluation.rkt
