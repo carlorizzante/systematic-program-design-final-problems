@@ -13,8 +13,8 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 01a. BSL Fundamentals
 - 01b. HtDF, How to Design Functions
 - 02 . HtDD, How to Design Data
-- 02 . HtDW
-- 03 . Compound Data
+- 03a. HtDW, How to Design Worlds
+- 03b. Compound Data
 - 04a. Self Reference
 - 04b. Reference
 - 05a. Naturals
@@ -65,10 +65,12 @@ Data definitions constrain problems to reasonable parameters - parameters we can
 
 To do so we often artificially create and specify new types from the basic types of the programming language we are using - see traffic-light.rkt or cities.rkt for some basic examples.
 
-## 02. HtDW
-Lander is a very basic interactive video game where the player has to land a block on the bottom side of a canvas against gravity.
+## 03a. HtDW, How to Design World
+Decent sized programs all share an important aspect: they are complex. At the same time, successful programs and apps evolve over time and require constant maintenance and improving. Clearly defining the various parts of a complex application allows to refactor its parts efficiently.
 
-## 03. Compound Data
+Different programming languages may have syntax and paradigms different than BSL. However the main concepts still apply. There will be information to be expressed as data and users interactions to be handled.
+
+## 03b. Compound Data
 In progress...
 
 ## 04a. Self Reference

@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [UNRELEASED]
+### Added
+- 03a. HtDW, How to Design Worlds/lander.rkt
+- 03a. HtDW, How to Design Worlds/slider.rkt
+
+### Updated
+- README.md - updates "03a. HtDW, How to Design Worlds"
+
 ## [0.2.2] - 2017-04-28
 ### Added
 - 02. HtDD, How to Design Data/cities.rkt
