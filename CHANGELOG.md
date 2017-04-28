@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.2.2] - 2017-04-28
+### Added
+- 02. HtDD, How to Design Data/cities.rkt
+- 02. HtDD, How to Design Data/conditionals.rkt
+- 02. HtDD, How to Design Data/enumeration.rkt
+- 02. HtDD, How to Design Data/health.rkt
+- 02. HtDD, How to Design Data/interval.rkt
+- 02. HtDD, How to Design Data/itemization.rkt
+- 02. HtDD, How to Design Data/traffic-light.md
+- 02. HtDD, How to Design Data/traffic-light.rkt
+
+### Changed
+- README.md - Added chapter "- 02 . HtDD, How to Design Data"
+
 ## [0.2.1] - 2017-04-27
 ### Added
 - 01b. HtDF, How to Design Functions/area.rkt

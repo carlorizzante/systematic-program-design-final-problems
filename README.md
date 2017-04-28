@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.2.1
+Release 0.2.2
 
 A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway - and the most relevant concepts in Systematic Program Design in nutshells.
 
@@ -59,7 +59,11 @@ After the tests, at least initially, functions are taken from an inventory of te
 Once tests and stub are in place and we verified that all run properly (though tests are expected to fail at this point), the template is edited or copied to write the function body which will be run against the tests to verify that the function satisfies the requirements.
 
 ## 02. HtDD, How to Design Data
-In progress...
+While most programs tend to have more function designs than data designs, the design of data is an important and crucial aspect of software design. Data represents information and functions are designed accordingly to how data is designed information represented.
+
+Data definitions constrain problems to reasonable parameters - parameters we can reason about - therefore making code easier to understand and manipulate as legacy code for other developers and/or at future date for ourselves.
+
+To do so we often artificially create and specify new types from the basic types of the programming language we are using - see traffic-light.rkt or cities.rkt for some basic examples.
 
 ## 02. HtDW
 Lander is a very basic interactive video game where the player has to land a block on the bottom side of a canvas against gravity.
