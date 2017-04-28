@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [UNRELEASED]
+## [0.2.3] - 2017-04-28
 ### Added
 - 03a. HtDW, How to Design Worlds/lander.rkt
 - 03a. HtDW, How to Design Worlds/slider.rkt
