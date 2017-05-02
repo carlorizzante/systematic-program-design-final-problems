@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.15.1] - 2017-05-02
+### Added
+- 03a. HtDW, How to Design Worlds/big-bang-template.rkt
+- 03a. HtDW, How to Design Worlds/countdown.rkt
+
 ## [0.15.0] - 2017-04-28
 ### Added
 - 03a. HtDW, How to Design Worlds/lander.rkt
