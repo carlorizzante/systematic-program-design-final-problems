@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.16.0
+Release 0.17.0
 
 A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway - and the most relevant concepts in Systematic Program Design in nutshells.
 
@@ -77,6 +77,14 @@ In BSL we typically use "define-struct" at this purpose.
 
 ## 04a. Self Reference
 When working on Arbitrary-sized information, since we do not know the size of the information, we can often apply recursion in order to handle the data. In order to do so, data has to be properly structured and self-referenced.
+
+Self Reference allows us to represent arbitrarily large amount of information - information we do not necessarily know the size of in advance.
+
+Compound Data is the first choice for representing complex information. However, arrays, lists, similar entities are as well as good examples.
+
+A well formed self-referenced data has at least two cases, at lease one base case, and one or more self-referenced cases. The base case is fundamental for it stops the recursive loop. The self-referenced cases allow for recursion on data.
+
+Tests are fundamental for Self-Reference, they need to include a base test (usually tested first), and all edge cases right after.
 
 ## 04b. Reference
 Data doesn't necessarily have to reference itself. When within our data definition an entity refers to an other, we say there is a "reference". Reference allows for the creation of complex data structures.

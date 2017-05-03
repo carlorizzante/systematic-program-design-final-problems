@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.17.0] - 2017-05-03
+### Added
+- 04a. Self Reference/booleans.rkt
+- 04a. Self Reference/images.rkt
+- 04a. Self Reference/lists.rkt
+- 04a. Self Reference/numbers.rkt
+- 04a. Self Reference/quidditch.rkt
+
+### Updated
+- README.md - Updates 04a. Self Rerefence chapter
+
 ## [0.16.0] - 2017-05-03
 ### Added
 - 03b. Compound Data/baloon.rkt
