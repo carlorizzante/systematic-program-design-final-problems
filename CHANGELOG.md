@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [UNRELEASED] [0.16.0]
+### Added
+- 03b. Compound Data/baloon.rkt
+- 03b. Compound Data/cowabunga.rkt
+- 03b. Compound Data/define-struct.rkt
+- 03b. Compound Data/movie.rkt
+- 03b. Compound Data/player.rkt
+
+### Changed
+- lander.rkt moved from 03a. HtDW, to 03b. Compound Data
+
+### Updated
+- README.md - updates "03b. Compound Data"
+
 ## [0.15.1] - 2017-05-02
 ### Added
 - 03a. HtDW, How to Design Worlds/big-bang-template.rkt

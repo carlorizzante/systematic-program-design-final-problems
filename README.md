@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.15.1
+Release 0.16.0
 
 A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway - and the most relevant concepts in Systematic Program Design in nutshells.
 
@@ -71,7 +71,9 @@ Decent sized programs all share an important aspect: they are complex. At the sa
 Different programming languages may have syntax and paradigms different than BSL. However the main concepts still apply. There will be information to be expressed as data and users interactions to be handled.
 
 ## 03b. Compound Data
-In progress...
+We define as Compound Data information that consists of two or more naturally connected values. This relates to various types of entities normally used in programming, objects, dictionaries, structures, arrays containing different types, etc.
+
+In BSL we typically use "define-struct" at this purpose.
 
 ## 04a. Self Reference
 When working on Arbitrary-sized information, since we do not know the size of the information, we can often apply recursion in order to handle the data. In order to do so, data has to be properly structured and self-referenced.
