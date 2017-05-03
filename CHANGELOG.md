@@ -4,11 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [UNRELEASED] [0.16.0]
+## [0.16.0] - 2017-05-03
 ### Added
 - 03b. Compound Data/baloon.rkt
 - 03b. Compound Data/cowabunga.rkt
 - 03b. Compound Data/define-struct.rkt
+- 03b. Compound Data/lander.rkt
 - 03b. Compound Data/movie.rkt
 - 03b. Compound Data/player.rkt
 
