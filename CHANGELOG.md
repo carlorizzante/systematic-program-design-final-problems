@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.18.0] - 2017-05-04
+### Added
+- 04b. Reference/bubbles.rkt
+- 04b. Reference/tuition-graph.rkt
+- 04b. Reference/tuition-graph-alt.rkt
+
 ## [0.17.0] - 2017-05-03
 ### Added
 - 04a. Self Reference/booleans.rkt
@@ -13,7 +19,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - 04a. Self Reference/quidditch.rkt
 
 ### Updated
-- README.md - Updates 04a. Self Rerefence chapter
+- README.md - Updates 04a. Self Reference chapter
 
 ## [0.16.0] - 2017-05-03
 ### Added
