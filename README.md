@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.18.0
+Release 0.19.0
 
 A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway - and the most relevant concepts in Systematic Program Design in nutshells.
 
@@ -90,7 +90,9 @@ Tests are fundamental for Self-Reference, they need to include a base test (usua
 Data doesn't necessarily have to reference itself. When within our data definition an entity refers to an other, we say there is a "reference". Reference allows for the creation of even more complex data structures.
 
 ## 05a. Naturals
-An interesting experiment redefining a custom set of Natural numbers (more precisely an equivalent representation) and relative methods to work with it.
+Being able to nimbly work with numbers is an essential skill for a developer. This section exposes some basic techniques and perhaps not immediately aspects of handling and manipulating numbers.
+
+The file "pseudo-naturals.rkt" shows an interesting experiment where a custom set of Natural numbers (more precisely an equivalent representation) is used as a base for a set of dedicated methods.
 
 ## 05b. Helpers
 Helpers are usually quite generic functions designed with the purpose to support and enhance other more specific functions. Helpers are key for abstraction.

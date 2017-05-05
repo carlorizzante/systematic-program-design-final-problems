@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.19.0] - 2017-05-05
+### Added### Changed
+- 05.a Naturals/display-numbers.rkt
+- 05.a Naturals/naturals.rkt
+- 05.a Naturals/odds.rkt
+
+### Changed
+- 05.a Naturals/naturals.rkt - renamed into pseudo-naturals.rkt
+
 ## [0.18.0] - 2017-05-04
 ### Added
 - 04b. Reference/bubbles.rkt

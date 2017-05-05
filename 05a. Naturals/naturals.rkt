@@ -1,156 +1,90 @@
-;
-; An interesting experiment, using '!' as fundamental unit in a custom made counting system.
-; Therefore a custom-made NATURAL is a list of '!' (or an empty list for the entity zero).
-; The series of functions below are implementation of a rudimentary algebraic set of rules
-; to work with the data definition of NATURAL.
-;
-; Methods:
-; ------------------------------------------------
-; - ZERO? n       > Equality for the entity zero
-; - ADD1 n        > Add one unit to n
-; - SUB1 n        > Subtract one unit from n
-; - ADD n1 n2     > Adds n1 to n2
-; - DIFF n1 n2    > Substract n2 from n1
-; - EQUAL n1 n2   > Equality for n1 against n2
-; - TIMES n1 n2   > n1 times n2
-; - FACTORIAL n   > Factorial for n
+;; ===========================
+;; Data Definition
+;; ===========================
 
+;; Natural is one of:
+;; - 0
+;; (add1 Natural)
+;; A natural number
 
-;; ============================
-;; Data definition
-;; ============================
+(define N0 0)
+(define N1 (add1 N0))
+(define N2 (add1 N1))
+(define N3 (add1 N2))
+(define N4 (add1 N3))
+(define N5 (add1 N4))
+(define N6 (add1 N5))
+(define N7 (add1 N6))
+(define N8 (add1 N7))
+(define N9 (add1 N8))
+(define N10 (add1 N9))
 
-;; NATURAL is one of:
-;; - empty
-;; - (cons "!" NATURAL)
-
-(define N0 empty)
-(define N1 (cons "!" N0))     ; 1
-(define N2 (cons "!" N1))     ; 2
-(define N3 (cons "!" N2))     ; 3
-(define N4 (cons "!" N3))     ; 4
-(define N5 (cons "!" N4))     ; 5
-(define N6 (cons "!" N5))     ; 6
-(define N7 (cons "!" N6))     ; 7
-(define N8 (cons "!" N7))     ; 8
-(define N9 (cons "!" N8))     ; 9
-(define N10 (cons "!" N9))    ; 10
-
+#;
 (define (fn-for-natural n)
-  (cond [(ZERO? n) (...)]
-        [else
-         (... n
-              (fn-for-natural (SUB1 n)))]))
+  (cond [(zero? n) (...)]
+        [else (... n
+                   (fn-for-natural (sub1 n)))]))
 
 
-;; ============================
-;; Functions (methods)
-;; ============================
-
-(define (ZERO? n) (empty? n))     ; Any          -> Boolean
-(define (ADD1 n) (cons "!" n))    ; NATURAL[>=0] -> NATURAL
-(define (SUB1 n) (rest n))        ; NATURAL[>0]  -> NATURAL
+;; Template rules used:
+;; - Atomic Distinct                0
+;; - Compound Data                  (add1 Natural)
+;; - Self Reference                 (sub1 n) is Natural
 
 
-;; NATURAL NATURAL -> NATURAL
-;; Returns the sum of two naturals
-; (define (ADD n1 n2) 0) ; stub
+;; ===========================
+;; Functions
+;; ===========================
 
-(check-expect (ADD N0 N0) N0)
-(check-expect (ADD N0 N1) N1)
-(check-expect (ADD N1 N2) N3)
-(check-expect (ADD N2 N2) N4)
-(check-expect (ADD N3 N4) N7)
-(check-expect (ADD N3 N6) N9)
+;; Natural -> Natural
+;; Given a natural n, returns the sum of all numbers between n and 0
+; (define (sum-all n) 0) ; stub
 
-(define (ADD n1 n2)
-  (cond [(ZERO? n1) n2]
-        [else
-         (ADD (SUB1 n1) (ADD1 n2))]))
+(check-expect (sum-all N0) N0)
+(check-expect (sum-all N1) N1)
+(check-expect (sum-all N3) N6)
+(check-expect (sum-all N4) N10)
 
-
-;; NATURAL NATURAL -> NATURAL
-;; Returns the different of two naturals, where n1 > n2 (!)
-; (define (DIFF n1 n2) 0) ; stub
-
-(check-expect (DIFF N1 N0) N1)
-(check-expect (DIFF N1 N1) N0)
-(check-expect (DIFF N2 N1) N1)
-(check-expect (DIFF N9 N3) N6)
-
-(define (DIFF n1 n2)
-  (cond [(ZERO? n2) n1]
-        [else
-         (DIFF (SUB1 n1) (SUB1 n2))]))
-
-;; Let's combine ADD and DIFF
-
-(check-expect (ADD N1 (DIFF N3 N2)) N2) ; 1 + (3 - 2) = 2
-(check-expect (DIFF N9 (ADD N3 N2)) N4) ; 9 - (3 + 2) = 4
+(define (sum-all n)
+  (cond [(zero? n) 0]
+        [else (+ n (sum-all (sub1 n)))]))
 
 
-;; NATURAL NATURAL -> Boolean
-;; While n1 > n2, returns true if n1 equals n2, false otherwise
-; (define (EQUAL n1 n2) false) ; stub
+;; Natural -> ListOfNatural
+;; Given a natural n, returns a list of all natural between n and 0, escluding 0
+; (define (list-all n) empty) ; stub
 
-(check-expect (EQUAL N0 N0) true)
-(check-expect (EQUAL N1 N0) false)
-; (check-expect (EQUAL N0 N1) false)
-(check-expect (EQUAL N3 N3) true)
-; (check-expect (EQUAL N4 N5) false)
-(check-expect (EQUAL N6 N2) false)
+(check-expect (list-all N0) empty)
+(check-expect (list-all N1) (cons N1 empty))
+(check-expect (list-all N3) (cons N3 (cons N2 (cons N1 empty))))
 
-(define (EQUAL n1 n2)
-  (cond [(ZERO? (DIFF n1 n2)) true]
-        [else false]))
+(define (list-all n)
+  (cond [(zero? n) empty]
+        [else (cons n (list-all (sub1 n)))]))
 
 
-;; NATURAL NATURAL NATURAL -> NATURAL
-;; Returns n1 times n2, n3 = n2
-; (define (TIMES n1 n2 n3) 0) ; stub
+;; Natural -> Natural
+;; Returns the factorial of a given natural n
+; (define (factorial n) 0) ; stub
 
-(check-expect (TIMES-HELPER N0 N3 N3) N0)
-(check-expect (TIMES-HELPER N1 N4 N4) N4)
-(check-expect (TIMES-HELPER N3 N2 N2) N6)
-(check-expect (TIMES-HELPER N2 N2 N2) N4)
-(check-expect (TIMES-HELPER N4 N2 N2) N8)
-(check-expect (TIMES-HELPER N2 N4 N4) N8)
-(check-expect (TIMES-HELPER N3 N3 N3) N9)
+(check-expect (factorial 0) 1)
+(check-expect (factorial 1) 1)
+(check-expect (factorial 3) 6)
+(check-expect (factorial 5) 120)
 
-(define (TIMES-HELPER n1 n2 n3)
-  (cond [(or (ZERO? n1) (ZERO? n2)) N0]
-        [else
-         (if (EQUAL n1 N1)
-             n2
-             (TIMES-HELPER (SUB1 n1) (ADD n2 n3) n3))]))
+(define (factorial n)
+  (cond [(zero? n) 1]
+        [else (* n (factorial (sub1 n)))]))
 
 
-;; NATURAL NATURAL -> NATURAL
-;; Returns n1 times n2
-; (define (TIMES n1 n2) 0) ; stub
+;; Natural Natural -> ListOfNatural
+;; Given two natural a, b, such as a <=b, returns a list of all naturals between a and b
+; (define (range-list a b) empty) ; stub
 
-(check-expect (TIMES N0 N3) N0)
-(check-expect (TIMES N1 N4) N4)
-(check-expect (TIMES N3 N2) N6)
-(check-expect (TIMES N2 N2) N4)
-(check-expect (TIMES N4 N2) N8)
-(check-expect (TIMES N2 N4) N8)
-(check-expect (TIMES N3 N3) N9)
+(check-expect (range-list 0 0) (cons 0 empty))
+(check-expect (range-list 2 2) (cons 2 empty))
+(check-expect (range-list 3 7) (cons 3 (cons 4 (cons 5 (cons 6 (cons 7 empty))))))
 
-(define (TIMES n1 n2)
-  (TIMES-HELPER n1 n2 n2))
-
-
-;; NATURAL -> NATURAL
-;; Returns the factorial of a natural
-; (define (FACTORIAL n) 0) ; stub
-
-(check-expect (FACTORIAL N0) N1)
-(check-expect (FACTORIAL N1) N1)
-(check-expect (FACTORIAL N2) N2)
-(check-expect (FACTORIAL N3) N6)
-
-(define (FACTORIAL n)
-  (cond [(ZERO? n) N1]
-        [else
-         (TIMES n (FACTORIAL (SUB1 n)))]))
+(define (range-list a b)
+  (cond [(zero? (- a b)) (cons a empty)]
+        [else (cons a (range-list (+ a 1) b))]))
