@@ -1,6 +1,5 @@
 (require 2htdp/image)
 
-
 ;; ==========================
 ;; Data definition
 ;; ==========================
@@ -10,6 +9,7 @@
 ;; - "bubble"
 ;; interp.  a gelatinous blob, either a solid or a bubble
 ;; Examples are redundant for enumerations
+
 #;
 (define (fn-for-blob b)
   (cond [(string=? b "solid") (...)]

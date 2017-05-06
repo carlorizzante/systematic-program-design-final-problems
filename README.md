@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.19.0
+Release 0.20.0
 
 A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway - and the most relevant concepts in Systematic Program Design in nutshells.
 
@@ -95,7 +95,11 @@ Being able to nimbly work with numbers is an essential skill for a developer. Th
 The file "pseudo-naturals.rkt" shows an interesting experiment where a custom set of Natural numbers (more precisely an equivalent representation) is used as a base for a set of dedicated methods.
 
 ## 05b. Helpers
-Helpers are usually quite generic functions designed with the purpose to support and enhance other more specific functions. Helpers are key for abstraction.
+Helpers are generic, simple functions designed with the purpose to support and enhance other more specific functions. Helpers are key for abstraction.
+
+A good helper function takes care of one operation. More complex functions may use one or more helpers in order to perform more sophisticated operations, and to keep code easily maintainable and readable.
+
+In Systematic Program Design, the use of helpers is defined as Function Composition. Function Composition is applied when a function has to perform two or more distinct and complete operations on the consumed data.
 
 ## 06a. Binary Search Trees
 Binary Search Trees are a fundamental block in Computer Science. Even if we might not often have to directly handle data at low level, understanding how they are structured and how to work with them is greatly beneficial. Similar techniques can be applied to other fields.

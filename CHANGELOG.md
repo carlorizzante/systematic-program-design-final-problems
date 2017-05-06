@@ -4,8 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.20.0] - 2017-05-06
+### Added
+- 05b. Helpers/arrange-images.rkt
+- 05b. Helpers/purple-rain.rkt
+- 05b. Helpers/arrange-strings.rkt
+
+### Updated
+- README.md - 05b. Helpers chapter updated
+- 05b. Helpers/blobs.rkt - spacing
+
 ## [0.19.0] - 2017-05-05
-### Added### Changed
+### Added
 - 05.a Naturals/display-numbers.rkt
 - 05.a Naturals/naturals.rkt
 - 05.a Naturals/odds.rkt
