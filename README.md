@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.21.0
+Release 0.21.1
 
 A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway - and the most relevant concepts in Systematic Program Design in nutshells.
 
@@ -19,9 +19,9 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 04b. Reference
 - 05a. Naturals
 - 05b. Helpers
-- 06 . Binary Search Trees
------
 - 06a. Binary Search Trees
+- 06b. Final Problem - Space Invaders
+-----
 - 06b. Mutual Reference
 - 07a. Crossed Data - Two One-of Types
 - 07b. Local
