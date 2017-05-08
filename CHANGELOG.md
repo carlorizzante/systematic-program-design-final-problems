@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.21.0] - 2017-05-08
+### Added
+- 06. Binary Search Trees/accounts.rkt
+- 06. Binary Search Trees/binary-search-tree.rkt
+- 06. Binary Search Trees/lists-basic.rkt
+- 06. Binary Search Trees/render-bst.rkt
+
+### Changed
+- Archives "06a. Trees/binary-search-tree.rkt"
+
+### Deleted
+- Removes "06a. Trees" folder
+
 ## [0.20.0] - 2017-05-06
 ### Added
 - 05b. Helpers/arrange-images.rkt
