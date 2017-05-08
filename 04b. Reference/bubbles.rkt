@@ -128,21 +128,21 @@
 ; (define (render-scene lob) MTS) ; stub
 
 (check-expect (render-scene empty) (place-image
-                                    (place-bubble LOB0) 0 0
+                                    (place-bubbles LOB0) 0 0
                                     (overlay REF MTS)))
 (check-expect (render-scene LOB1) (place-image
-                                   (place-bubble LOB1) 0 0
+                                   (place-bubbles LOB1) 0 0
                                    (overlay REF MTS)))
 (check-expect (render-scene LOB2) (place-image
-                                   (place-bubble LOB2) 0 0
+                                   (place-bubbles LOB2) 0 0
                                    (overlay REF MTS)))
 (check-expect (render-scene LOB3) (place-image
-                                   (place-bubble LOB3) 0 0
+                                   (place-bubbles LOB3) 0 0
                                    (overlay REF MTS)))
 
 (define (render-scene lob)
   (place-image
-   (place-bubble lob) 0 0
+   (place-bubbles lob) 0 0
    (overlay REF MTS)))
 
 
@@ -194,15 +194,15 @@
 ;; Overlay all Bubbles in a ListOfBubble in one single scene
 ; (define (place-bubble lob) MTS) ; stub
 
-(check-expect (place-bubble LOB0) REF)
-(check-expect (place-bubble LOB1) (overlay
+(check-expect (place-bubbles LOB0) REF)
+(check-expect (place-bubbles LOB1) (overlay
                                (pop-bubble B1)
                                REF))
-(check-expect (place-bubble LOB2) (overlay
+(check-expect (place-bubbles LOB2) (overlay
                                (pop-bubble B2)
                                (pop-bubble B1)
                                REF))
-(check-expect (place-bubble LOB3) (overlay
+(check-expect (place-bubbles LOB3) (overlay
                                (pop-bubble B3)
                                (pop-bubble B2)
                                (pop-bubble B1)
@@ -210,8 +210,8 @@
 
 ;<template from ListOfBubble
 
-(define (place-bubble lob)
+(define (place-bubbles lob)
   (cond [(empty? lob) REF]
         [else
          (overlay (pop-bubble (first lob))
-                  (place-bubble (rest lob)))]))
+                  (place-bubbles (rest lob)))]))

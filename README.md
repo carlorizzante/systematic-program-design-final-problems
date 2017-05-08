@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.21.1
+Release 0.21.2
 
 A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway - and the most relevant concepts in Systematic Program Design in nutshells.
 
@@ -103,7 +103,7 @@ A good helper function takes care of one operation. More complex functions may u
 
 In Systematic Program Design, the use of helpers is defined as Function Composition. Function Composition is applied when a function has to perform two or more distinct and complete operations on the consumed data.
 
-## 06. Binary Search Trees
+## 06a. Binary Search Trees
 Binary Search Trees are a fundamental block in Computer Science. Even if we might not often have to directly handle data at low level, understanding how they are structured and how to work with them is greatly beneficial. Similar techniques can be applied to other fields.
 
 --------

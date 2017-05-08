@@ -4,16 +4,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.21.2] - 2017-05-08
+### Updated
+- 04b. Reference/bubble.rkt
+
+### Edited
+- README.md - minor details
+
 ## [0.21.1] - 2017-05-08
 ### Updated
 - Updates README.md
 
 ## [0.21.0] - 2017-05-08
 ### Added
-- 06. Binary Search Trees/accounts.rkt
-- 06. Binary Search Trees/binary-search-tree.rkt
-- 06. Binary Search Trees/lists-basic.rkt
-- 06. Binary Search Trees/render-bst.rkt
+- 06a. Binary Search Trees/accounts.rkt
+- 06a. Binary Search Trees/binary-search-tree.rkt
+- 06a. Binary Search Trees/lists-basic.rkt
+- 06a. Binary Search Trees/render-bst.rkt
 
 ### Changed
 - Archives "06a. Trees/binary-search-tree.rkt"
