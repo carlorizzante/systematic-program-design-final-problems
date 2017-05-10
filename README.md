@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.21.3
+Release 0.22.0
 
 A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway - and the most relevant concepts in Systematic Program Design in nutshells.
 
@@ -105,6 +105,11 @@ In Systematic Program Design, the use of helpers is defined as Function Composit
 
 ## 06a. Binary Search Trees
 Binary Search Trees are a fundamental block in Computer Science. Even if we might not often have to directly handle data at low level, understanding how they are structured and how to work with them is greatly beneficial. Similar techniques can be applied to other fields.
+
+## 06b. Final Problem - Space Invaders
+Space Invaders is a simple game where the player defends against never ending waves of Space Villains coming from the sky. Arrows keys flip the direction towards which the player is sliding, on the bottom of the screen. Space Bar fires powerful energy beams that can destroy several foes at once. Game Over is if any of the Space Villains manages to reach the ground.
+
+Despite the simplicity of the game and its graphical aspect, the code itself has been quite a challenge. Especially the aspects related to managing movements of all elements in play, and collisions against the edge of the screen and agains each other. Events that consequently require a change of the State.
 
 --------
 

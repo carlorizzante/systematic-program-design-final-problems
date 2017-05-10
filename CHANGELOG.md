@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.22.0] - 2017-05-10
+### Added
+- 06b. Final Problem - Space Invaders/space-invaders.rkt
+- README.md - "06b. Final Problem - Space Invaders" chapter
+
 ## [0.21.3] - 2017-05-10
 ### Updated
 - Minor changes to 04b. Reference/bubbles.rkt
