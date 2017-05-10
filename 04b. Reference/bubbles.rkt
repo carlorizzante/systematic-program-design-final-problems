@@ -103,10 +103,10 @@
 (check-expect (next-lob empty) empty)
 (check-expect (next-lob LOB1) (cons (make-bubble 100 150 (* (bubble-size B1) CX) "outline" "red") empty))
 (check-expect (next-lob LOB2) (cons (make-bubble 250 350 (* (bubble-size B2) CX) "outline" "green")
-                                   (cons (make-bubble 100 150 (* (bubble-size B1) CX) "outline" "red") empty)))
+                                    (cons (make-bubble 100 150 (* (bubble-size B1) CX) "outline" "red") empty)))
 (check-expect (next-lob LOB3) (cons (make-bubble 370 120 (* (bubble-size B3) CX) "outline" "lightblue")
-                                   (cons (make-bubble 250 350 (* (bubble-size B2) CX) "outline" "green")
-                                         (cons (make-bubble 100 150 (* (bubble-size B1) CX) "outline" "red") empty))))
+                                    (cons (make-bubble 250 350 (* (bubble-size B2) CX) "outline" "green")
+                                          (cons (make-bubble 100 150 (* (bubble-size B1) CX) "outline" "red") empty))))
 (check-expect (next-lob LOBx) empty)
 
 (define (next-lob lob)
@@ -167,51 +167,47 @@
 ; (define (pop-bubble bbl) (circle 10 "outline" "teal")) ; stub
 
 (check-expect (pop-bubble B1) (overlay/xy
-                           REF
-                           (* 2 (bubble-x B1)) (* 2 (bubble-y B1))
-                           (circle 20 "outline" "red")))
+                               REF
+                               (* 2 (bubble-x B1)) (* 2 (bubble-y B1))
+                               (circle 20 "outline" "red")))
 (check-expect (pop-bubble B2) (overlay/xy
-                           REF
-                           (* 2 (bubble-x B2)) (* 2 (bubble-y B2))
-                           (circle 14 "outline" "green")))
+                               REF
+                               (* 2 (bubble-x B2)) (* 2 (bubble-y B2))
+                               (circle 14 "outline" "green")))
 (check-expect (pop-bubble B3) (overlay/xy
-                           REF
-                           (* 2 (bubble-x B3)) (* 2 (bubble-y B3))
-                           (circle 24 "outline" "lightblue")))
+                               REF
+                               (* 2 (bubble-x B3)) (* 2 (bubble-y B3))
+                               (circle 24 "outline" "lightblue")))
 (check-expect (pop-bubble B4) (overlay/xy
-                           REF
-                           (* 2 (bubble-x B4)) (* 2 (bubble-y B4))
-                           (circle 40 "solid" "black")))
+                               REF
+                               (* 2 (bubble-x B4)) (* 2 (bubble-y B4))
+                               (circle 40 "solid" "black")))
 
 ;<template from Bubble>
 (define (pop-bubble bbl) (overlay/xy
-                           REF
-                           (* 2 (bubble-x bbl)) (* 2 (bubble-y bbl))
-                           (circle (bubble-size bbl) (bubble-style bbl) (bubble-color bbl))))
+                          REF
+                          (* 2 (bubble-x bbl)) (* 2 (bubble-y bbl))
+                          (circle (bubble-size bbl) (bubble-style bbl) (bubble-color bbl))))
 
 
 ;; ListOfBubble -> Image
 ;; Overlay all Bubbles in a ListOfBubble in one single scene
 ; (define (place-bubble lob) MTS) ; stub
 
-(check-expect (place-bubbles LOB0) REF)
-(check-expect (place-bubbles LOB1) (overlay
-                               (pop-bubble B1)
-                               REF))
+(check-expect (place-bubbles LOB0) empty-image)
+(check-expect (place-bubbles LOB1) (pop-bubble B1))
 (check-expect (place-bubbles LOB2) (overlay
-                               (pop-bubble B2)
-                               (pop-bubble B1)
-                               REF))
+                                    (pop-bubble B2)
+                                    (pop-bubble B1)))
 (check-expect (place-bubbles LOB3) (overlay
-                               (pop-bubble B3)
-                               (pop-bubble B2)
-                               (pop-bubble B1)
-                               REF))
+                                    (pop-bubble B3)
+                                    (pop-bubble B2)
+                                    (pop-bubble B1)))
 
 ;<template from ListOfBubble
 
 (define (place-bubbles lob)
-  (cond [(empty? lob) REF]
+  (cond [(empty? lob) empty-image]
         [else
          (overlay (pop-bubble (first lob))
                   (place-bubbles (rest lob)))]))
