@@ -1,7 +1,7 @@
 # Systematic Program Design - Final Problems
-Release 0.22.0
+Release 0.23.0
 
-A collection of final projects made while studying Systematic Program Design - the most interesting bits anyway - and the most relevant concepts in Systematic Program Design in nutshells.
+Notes and solutions for problems collected while studying Systematic Program Design.
 
 The code is currently written in BSL/ISL/ASL since those are the languages used to teach Systematic Program Design at the University of British Columbia, along with the corresponding UBCx course. To run the codes presented in this repo you can use Dr.Racket.
 
@@ -21,6 +21,7 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 05b. Helpers
 - 06a. Binary Search Trees
 - 06b. Final Problem - Space Invaders
+- 07.  Mutual Reference
 -----
 - 06b. Mutual Reference
 - 07a. Crossed Data - Two One-of Types
@@ -110,6 +111,15 @@ Binary Search Trees are a fundamental block in Computer Science. Even if we migh
 Space Invaders is a simple game where the player defends against never ending waves of Space Villains coming from the sky. Arrows keys flip the direction towards which the player is sliding, on the bottom of the screen. Space Bar fires powerful energy beams that can destroy several foes at once. Game Over is if any of the Space Villains manages to reach the ground.
 
 Despite the simplicity of the game and its graphical aspect, the code itself has been quite a challenge. Especially the aspects related to managing movements of all elements in play, and collisions against the edge of the screen and agains each other. Events that consequently require a change of the State.
+
+## 07. Mutual Reference
+Mutually recursive data is characterized by programs having two, or more, cycles. An example of Mutual recursive data is arbitrary sized data in two or more dimensions, which requires two or more cycles in the type reference graph.
+
+R    - Reference
+SR   - Self Reference
+MR   - Mutual Reference
+NR   - Natural Recursion
+NMR  - Natural Mutual Recursion
 
 --------
 

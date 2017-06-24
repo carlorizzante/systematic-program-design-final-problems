@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.23.0] - 2017-06-24
+### Added
+- 07. Mutual Reference/files.rkt
+- 07. Mutual Reference/person-age.rkt
+
+### Updated
+- README.md - "07.  Mutual Reference" chapter
+
+### Archived
+- 06b. Mutual Reference
+- 07a. Crossed Data
+- 07b. Local
+
 ## [0.22.0] - 2017-05-10
 ### Added
 - 06b. Final Problem - Space Invaders/space-invaders.rkt
