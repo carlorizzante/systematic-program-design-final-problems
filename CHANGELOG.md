@@ -4,10 +4,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.24.0] - 2017-06-24
+### Added
+- 08a. Two One-of Types/merge.rkt
+- 08a. Two One-of Types/pattern.rkt
+- 08a. Two One-of Types/prefix.rkt
+
+### Updated
+- README.md - "08a. Two One-of Types" chapter
+- README.md - Removed some old content
+
 ## [0.23.0] - 2017-06-24
 ### Added
 - 07. Mutual Reference/files.rkt
 - 07. Mutual Reference/person-age.rkt
+
+### Archived
+- 08. Abstraction
 
 ### Updated
 - README.md - "07.  Mutual Reference" chapter

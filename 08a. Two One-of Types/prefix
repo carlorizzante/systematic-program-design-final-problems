@@ -1,0 +1,79 @@
+;; ===================
+;; Data Definitions
+;; ===================
+
+;; ListOfString is one of:
+;; - empty
+;; - (cons String ListOfString)
+;; interp. a list of strings
+
+(define LS0 empty)
+(define LS1 (cons "a" empty))
+(define LS2 (cons "a" (cons "b" empty)))
+(define LS3 (cons "c" (cons "b" (cons "a" empty))))
+
+#;
+(define (fn-for-los los)
+  (cond [(empty? los) (...)]
+        [else
+         (... (first los)
+              (fn-for-los (rest los)))]))
+
+
+;; ===================
+;; Functions
+;; ===================
+
+;; ListOfString ListOfString -> Boolean
+;; Returns true if the first list is a prefix of the second one, false otherwise
+; (define (prefix=? a b) false) ; stub
+
+;; list a       /      list b   |   empty   |   (cons String ListOfString)
+;; -------------------------------------------------------------------------
+;; empty                        |   true    |   true
+;; -------------------------------------------------------------------------
+;; (cons String ListOfString)   |   false   |
+
+(check-expect (prefix=? empty empty) true)
+(check-expect (prefix=? empty LS2) true)
+(check-expect (prefix=? LS1 empty) false)
+(check-expect (prefix=? (list "a") (list "a" "b")) true)
+(check-expect (prefix=? (list "a" "b") (list "a" "b" "c")) true)
+(check-expect (prefix=? (list "a" "b") (list "a" "b")) true)
+(check-expect (prefix=? (list "a" "b" "c") (list "a" "b")) false)
+(check-expect (prefix=? (list "a" "b") (list "b" "a")) false)
+
+#;
+(define (prefix=? a b)
+  (cond [(and (empty? a) (empty? b)) (...)]
+        [(and (empty? a) (cons? b)) (...)]
+        [(and (cons? a) (empty? b)) (...)]
+        [(and (cons? a) (cons? b)) (...)]))
+#;
+(define (prefix=? a b)
+  (cond [(and (empty? a) (empty? b)) true]
+        [(and (empty? a) (cons? b)) true]
+        [(and (cons? a) (empty? b)) false]
+        [(and (cons? a) (cons? b)) (if (equal? (first a) (first b))
+                                       (prefix=? (rest a) (rest b))
+                                       false)]))
+#;
+(define (prefix=? a b)
+  (cond [(empty? a) true]
+        [(and (cons? a) (empty? b)) false]
+        [(and (cons? a) (cons? b)) (if (equal? (first a) (first b))
+                                       (prefix=? (rest a) (rest b))
+                                       false)]))
+#;
+(define (prefix=? a b)
+  (cond [(empty? a) true]
+        [(empty? b) false]
+        [(and (cons? a) (cons? b)) (if (equal? (first a) (first b))
+                                       (prefix=? (rest a) (rest b))
+                                       false)]))
+
+(define (prefix=? a b)
+  (cond [(empty? a) true]
+        [(empty? b) false]
+        [(and (cons? a) (cons? b)) (and (equal? (first a) (first b))
+                                        (prefix=? (rest a) (rest b)))]))

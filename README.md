@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.23.0
+Release 0.24.0
 
 Notes and solutions for problems collected while studying Systematic Program Design.
 
@@ -22,11 +22,8 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 06a. Binary Search Trees
 - 06b. Final Problem - Space Invaders
 - 07.  Mutual Reference
+- 08a. Two One-of Types
 -----
-- 06b. Mutual Reference
-- 07a. Crossed Data - Two One-of Types
-- 07b. Local
-- 08 . Abstraction
 - 09a. Generative Recursion
 - 09b. Search & Lambda
 - 10 . Accumulators
@@ -121,13 +118,16 @@ MR   - Mutual Reference
 NR   - Natural Recursion
 NMR  - Natural Mutual Recursion
 
+## 08a. Two One-of Types
+Functions that can operate on two arguments which are one-of types. Requires a peculiar model, the cross product of the types comment table.
+
+The cross product of the types comment table provides with a way to clearly identify all possible test cases, which leads to identify all possible base cases.
+
+Types comment tables support and extend function templates. Those tables are essential for generating the templates.
+
+Type comments predict the templates, they are a model of the functions operating on the type. They are a representation of the program that tells us something about what the function will look like.
+
 --------
-
-## 06b. Mutual Reference
-When data mutually interconnect we say that there is a mutual reference. This is a more complex data structure that requires a specific structure in our code to be properly handled.
-
-## 07a. Crossed Data - Two One-of Types
-When functions manipulate two or more different sets of data, we say that they operate on crossed data. The key here is to first visualize how the problem can be solved and to identify areas that can be grouped or simplified.
 
 ## 07b. Local
 Lexical scope and encapsulation allow for a cleaner code. Helpers can be declared within the function that depends from them, so that not to pollute the global scope. Locals may also improve performances reducing the computation load.
