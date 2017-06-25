@@ -1,9 +1,9 @@
 # Systematic Program Design - Final Problems
-Release 0.24.0
+Release 0.25.0
 
 Notes and solutions for problems collected while studying Systematic Program Design.
 
-The code is currently written in BSL/ISL/ASL since those are the languages used to teach Systematic Program Design at the University of British Columbia, along with the corresponding UBCx course. To run the codes presented in this repo you can use Dr.Racket.
+The code is currently written in BSL/ISL/ASL since those are the languages used to teach Systematic Program Design at the University of British Columbia, along with the corresponding UBCx course. To run the codes presented in this repo you need to install Dr.Racket.
 
 Note that the entire SPD path has been recently restructured into a new set of 6 courses.
 
@@ -23,6 +23,7 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 06b. Final Problem - Space Invaders
 - 07.  Mutual Reference
 - 08a. Two One-of Types
+- 08b. Local
 -----
 - 09a. Generative Recursion
 - 09b. Search & Lambda
@@ -126,6 +127,15 @@ The cross product of the types comment table provides with a way to clearly iden
 Types comment tables support and extend function templates. Those tables are essential for generating the templates.
 
 Type comments predict the templates, they are a model of the functions operating on the type. They are a representation of the program that tells us something about what the function will look like.
+
+## 08b. Local
+Most popular programming languages allow the definition of functions within other functions, constants and variables. In BSL/ISL/ASL, locals make possible to define constants, functions, and structures that are available only within the local expression. This allows the encapsulation of "private" helper functions.
+
+An important use of locals is avoiding redundant calculations.
+
+An other important use of locals is when two or more functions work in synergy (Mutual Recursion and alike). Those mutual recursive functions can be contained within a master function, so that to be visible exclusively within it.
+
+Helper functions are another candidate for encapsulation. However, helpers may be used by several functions, and if so they have to be available for them as well, which means that in this specific case encapsulation may not be the appropriate solution.
 
 --------
 
