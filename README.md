@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.25.0
+Release 0.26.0
 
 Notes and solutions for problems collected while studying Systematic Program Design.
 
@@ -24,6 +24,7 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 07.  Mutual Reference
 - 08a. Two One-of Types
 - 08b. Local
+- 09.  Abstraction
 -----
 - 09a. Generative Recursion
 - 09b. Search & Lambda
@@ -137,15 +138,32 @@ An other important use of locals is when two or more functions work in synergy (
 
 Helper functions are another candidate for encapsulation. However, helpers may be used by several functions, and if so they have to be available for them as well, which means that in this specific case encapsulation may not be the appropriate solution.
 
---------
-
-## 07b. Local
 Lexical scope and encapsulation allow for a cleaner code. Helpers can be declared within the function that depends from them, so that not to pollute the global scope. Locals may also improve performances reducing the computation load.
 
-## 08. Abstraction
+## 09.  Abstraction
+Abstraction is another important concept in software engineering and optimization. When we take aside repetitions in our code and create reusable helpers, that's abstraction. The helper is defined as abstraction because it is a more general or less detailed solution for the original, local problem.
+
+Abstraction is a crucial technique for managing complexity in programs. It simplifies the main functions and readability. It also allows us to apply more precise, granular testing.
+
+An other aspect of abstraction is that it helps separate knowledge domains more clearly in our code.
+
 Abstraction allows for a cleaner code with less repetition. This is typically achieved with the use of helpers shared across multiple functions.
 
 Most programming languages offer a set of built in functions/helpers to manipulate arbitrary data, like map, filter, range, reduce, etc.
+
+When refactoring functions to apply abstraction to our code, we go through a process where we infer purpose and signature of the abstracted function. The process goes backward, we first refactor the original function applying abstraction. We then adapt the tests from the original function so that they can help us testing the abstracted function. And finally we infer purpose and signature.
+
+(... -> ...) (Listof ...) -> (Listof ...)
+
+Abstraction can generate helpers that can operate on a wider range than what we initially planned or expected.
+
+Abstraction is implemented in most programming languages through a range of built-in function that can be used to map, filter, fold, etc. As with all primitive and native functions of a programming language, those built-in helpers do not require testing on their own.
+
+Finally, abstraction can be used within an enclosing function with closures. We create a closure when a inner function uses a resource from an enclosing function, thus the resource being available exclusively within the enclosing function.
+
+Closure are useful and at times necessary with built-ins like filter, map, etc, since the predicates or functions we pass into them accept one single argument. We use closures when we need more than a single argument for predicates.
+
+--------
 
 ## 09a. Generative Recursion
 Generative Recursion is similar to Structural Recursion: a function calls itself recursively (or several functions call themselves in mutual recursion). For the recursion to terminate, each recursive call must receive an argument that is in some way "closer to the base case". That is what guarantees the recursion will eventually terminate. Differently from Structural Recursion, though, for Generative Recursion the base case is usually harder to be defined.

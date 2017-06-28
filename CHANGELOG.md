@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.26.0] - 2017-06-28
+### Added
+- 09. Abstraction/accounts.rkt
+- 09. Abstraction/final.rkt
+- 09. Abstraction/fold-dir.rkt
+- 09. Abstraction/fold-fns.rkt
+- 09. Abstraction/parameterization.rkt
+- 09. Abstraction/signatures-for-built-in-fn.rkt
+- 09. Abstraction/using-built-ins.rkt
+- 09. Abstraction/wide-only.rkt
+
+### Updated
+- README.md - "09. Abstraction" chapter
+
 ## [0.25.0] - 2017-06-25
 ### Added
 - 08a. Two One-of Types/matches.rkt
