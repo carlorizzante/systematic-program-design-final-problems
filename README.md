@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.26.0
+Release 0.27.0
 
 Notes and solutions for problems collected while studying Systematic Program Design.
 
@@ -25,8 +25,8 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 08a. Two One-of Types
 - 08b. Local
 - 09.  Abstraction
+- 10a. Generative Recursion
 -----
-- 09a. Generative Recursion
 - 09b. Search & Lambda
 - 10 . Accumulators
 - 11 . Graphs
@@ -163,12 +163,12 @@ Finally, abstraction can be used within an enclosing function with closures. We 
 
 Closure are useful and at times necessary with built-ins like filter, map, etc, since the predicates or functions we pass into them accept one single argument. We use closures when we need more than a single argument for predicates.
 
+## 10a. Generative Recursion
+Generative Recursion is similar to Structural Recursion, a function calls itself recursively (or several functions call themselves in mutual recursion), with a fundamental difference: for the generative recursion to terminate, each recursive call must receive an argument that is in some way "closer to the base case". That is what guarantees that the iteration will complete. Differently from Structural Recursion, though, for Generative Recursion the base case may be not immediately easily defined.
+
+An example of use for Generative Recursion is the generation of fractal images.
+
 --------
-
-## 09a. Generative Recursion
-Generative Recursion is similar to Structural Recursion: a function calls itself recursively (or several functions call themselves in mutual recursion). For the recursion to terminate, each recursive call must receive an argument that is in some way "closer to the base case". That is what guarantees the recursion will eventually terminate. Differently from Structural Recursion, though, for Generative Recursion the base case is usually harder to be defined.
-
-Generative Recursion is typically used to create fractal images.
 
 ## 09b. Search & Lambda
 Lambda are anonymous functions declared at the moment of necessity, that do not need to be kept in memory once the task the serve is accomplished. Lambda are an efficient alternative to helpers and local functions when the body of the function itself is straight forward and easier to understand (one-liner, a function simple enough to be clearly written in one single line).

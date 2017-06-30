@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.27.0] - 2017-06-30
+### Added
+- 10a. Generative Recursion/cantor.rkt
+- 10a. Generative Recursion/circle-fractal.rkt
+- 10a. Generative Recursion/fractals.rkt
+- 10a. Generative Recursion/termination.rkt
+
+### Updated
+- README.md "09a. Generative Recursion" changed in "10a. Generative Recursion"
+
+### Archived
+- 09a. Generative Recursion
+- 09b. Search & Lambda
+- 09a. Accumulators
+
 ## [0.26.0] - 2017-06-28
 ### Added
 - 09. Abstraction/accounts.rkt
