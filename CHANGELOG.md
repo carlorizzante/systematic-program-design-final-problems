@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## UNRELEASED [0.28.0]
+### Added
+- 10b. Search & Lambda/lambda.rkt
+- 10b. Search & Lambda/sudoku.rkt
+
+### Updated
+- README.md - "09b. Search & Lambda" chapter changed into "10b. Search & Lambda"
+
 ## [0.27.0] - 2017-06-30
 ### Added
 - 10a. Generative Recursion/cantor.rkt

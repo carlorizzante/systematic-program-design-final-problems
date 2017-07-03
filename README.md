@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.27.0
+Release 0.28.0
 
 Notes and solutions for problems collected while studying Systematic Program Design.
 
@@ -26,8 +26,8 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 08b. Local
 - 09.  Abstraction
 - 10a. Generative Recursion
+- 10b. Search & Lambda
 -----
-- 09b. Search & Lambda
 - 10 . Accumulators
 - 11 . Graphs
 
@@ -168,12 +168,21 @@ Generative Recursion is similar to Structural Recursion, a function calls itself
 
 An example of use for Generative Recursion is the generation of fractal images.
 
---------
-
-## 09b. Search & Lambda
+## 10b. Search & Lambda
 Lambda are anonymous functions declared at the moment of necessity, that do not need to be kept in memory once the task the serve is accomplished. Lambda are an efficient alternative to helpers and local functions when the body of the function itself is straight forward and easier to understand (one-liner, a function simple enough to be clearly written in one single line).
 
+Lambda are best used when a subroutine (inner function within an outer function) is used once in our main function, and when the body of the subroutine is so concise and easily understood that naming the inner function doesn't make the code easier to understand.
+
 A note about templates: a template is what I know about the body of the function based on what it consumes and its basic behavior, before getting into the details.
+
+### Sudoku solver
+We are generating an arbitrary-arity tree and doing a backtracking over it.
+
+Template blending. Templates are the outliner, the backbone, the sketch of the final function.
+
+The template is what we know about the body of the function based on what it consumes and its basic behavior, before we get to the details.
+
+--------
 
 ## 10. Accumulators
 In natural recursion data is manipulated in chunks, and each iteration of the recursive process receives a smaller and smaller chunk to work on. That process loses part of the information, for the recursive function is agnostic of where it is in the process.

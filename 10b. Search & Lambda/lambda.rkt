@@ -1,5 +1,7 @@
 (require 2htdp/image)
 
+;; lambda -> λ (CMD + \)
+
 ;; Number (listof Number) -> (listof Number)
 ;; produce only elements of lon > threshold
 (check-expect (only-bigger 2 empty) empty)
