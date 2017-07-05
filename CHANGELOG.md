@@ -4,7 +4,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## UNRELEASED [0.28.0]
+## [0.29.0] - 2017-07-05
+### Added
+- 11. Accumulators/average.rkt
+- 11. Accumulators/contains-key-tr.rkt
+- 11. Accumulators/damn-harry.rkt
+- 11. Accumulators/dron.rkt
+- 11. Accumulators/skip1.rkt
+- 11. Accumulators/skipn.rkt
+- 11. Accumulators/tail-rc-and.rkt
+- 11. Accumulators/tail-rc-product.rkt
+- 11. Accumulators/tail-rc-sum.rkt
+
+### Updated
+- README.md - "11 . Accumulators" chapter
+
+## [0.28.0] - 2017-07-03
 ### Added
 - 10b. Search & Lambda/lambda.rkt
 - 10b. Search & Lambda/sudoku.rkt

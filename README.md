@@ -1,7 +1,9 @@
 # Systematic Program Design - Final Problems
-Release 0.28.0
+Release 0.29.0
 
 Notes and solutions for problems collected while studying Systematic Program Design.
+
+> Writing code systematically follows the idea that the design of a function can be based on the sum of one or more templates and details that enables the program designer to think about programs in terms of higher level structures or models.
 
 The code is currently written in BSL/ISL/ASL since those are the languages used to teach Systematic Program Design at the University of British Columbia, along with the corresponding UBCx course. To run the codes presented in this repo you need to install Dr.Racket.
 
@@ -27,8 +29,8 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 09.  Abstraction
 - 10a. Generative Recursion
 - 10b. Search & Lambda
+- 11 . Accumulators
 -----
-- 10 . Accumulators
 - 11 . Graphs
 
 ## 01a. BSL Fundamentals
@@ -182,19 +184,28 @@ Template blending. Templates are the outliner, the backbone, the sketch of the f
 
 The template is what we know about the body of the function based on what it consumes and its basic behavior, before we get to the details.
 
---------
-
-## 10. Accumulators
-In natural recursion data is manipulated in chunks, and each iteration of the recursive process receives a smaller and smaller chunk to work on. That process loses part of the information, for the recursive function is agnostic of where it is in the process.
+## 11. Accumulators
+In natural recursion data is manipulated in chunks, and each iteration of the recursive process receives a smaller and smaller chunk to work on. That process loses part of the information, for the recursive function is agnostic of where it is in the process. To paraphrase the song, "we know where we are, but we don't know where we've been or where we still need to go".
 
 Accumulators can be seen as state being passed through the entire recursive process so that that part of information isn't lost. The next iteration will receive information about where it stands in the ongoing recursive path.
 
 Another important concept is Tail Recursion that affects performances in programs that have to manipulate large amount of data.
 
 This module shows applications for three kinds of accumulators:
-1. Context preserving accumulators - to preserve context lost in natural recursion.
-2. Result-so-far accumulators - to help achieve tail recursion by eliminating the need for pending operations.
-3. Worklist accumulators - to help achieve tail recursion by eliminating the need to retain future recursive calls in pending operations.
+
+1. Context preserving accumulators - preserve context lost in natural recursion.
+
+2. Result-so-far accumulators - help achieve tail recursion by eliminating the need for pending operations.
+
+3. Worklist accumulators - help achieve tail recursion by eliminating the need to retain future recursive calls in pending operations.
+
+### Tail Recursion with accumulators
+1. Template accordingly with the accumulator recipe.
+2. Delete part of template wrapping around recursive call.
+3. Computation that would have been around recursive call moves to be in accumulator argument position.
+
+--------
+
 
 ## 11. Graphs
 Information may naturally organize into trees of various kinds. When elements and/or properties of an information set are interrelated with more than one vector to the parent elements, we say that they take the form of graphs. Those data structures are generally defined as cyclic or directed graphs but there are of course acyclic graphs as well where data does not create opportunities for infinite loops.
