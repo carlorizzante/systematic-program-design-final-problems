@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.30.0
+Release 0.31.0
 
 Notes and solutions for problems collected while studying Systematic Program Design.
 
@@ -23,13 +23,15 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 05b. Helpers
 - 06a. Binary Search Trees
 - 06b. Final Problem - Space Invaders
-- 07.  Mutual Reference
+- 07 .  Mutual Reference
 - 08a. Two One-of Types
 - 08b. Local
-- 09.  Abstraction
+- 09 .  Abstraction
 - 10a. Generative Recursion
 - 10b. Search & Lambda
 - 11 . Accumulators
+- 12 . Graphs
+- 13 . Worked Problems
 
 ## 01a. BSL Fundamentals
 Systematic Program Design is taught through a language called BSL at first, for Beginner Student Language. The language will later be extended to Intermediary Student Language, and Advanced Student Language.
@@ -206,3 +208,8 @@ This module shows applications for three kinds of accumulators:
 Information can be organized into trees of various kinds. When elements and/or properties of an information set are interrelated with more than one vector to the parent elements, we say that they take the form of graphs. Those data structures are generally defined as cyclic or directed graphs but there are of course acyclic graphs as well where data does not create opportunities for infinite loops.
 
 Graphs help representing complex data structures like maps, wiring diagrams, even labyrinths. In order to work on graphs we need to define a new type of data generically called cyclic data as well as develop functions capable of working on this new form of data.
+
+## Worked Problems
+The section contains a solution for a merge-sort routine.
+
+## Final Problem

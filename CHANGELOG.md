@@ -4,12 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.31.0] - 2017-07-10
+### Added
+- 13. Worked Problems/merge-sort.rkt
+
+### Updated
+- README.md - "13. Worked Problems" chapter
+
 ## [0.30.0] - 2017-07-10
 ### Added
 - 12. Graphs/graphs.rkt
 
 ### Updated
-- README.md -
+- README.md - "12. Graphs" chapter
 
 ## [0.29.0] - 2017-07-05
 ### Added
