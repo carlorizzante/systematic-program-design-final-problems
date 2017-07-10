@@ -1,11 +1,11 @@
 # Systematic Program Design - Final Problems
-Release 0.29.0
+Release 0.30.0
 
 Notes and solutions for problems collected while studying Systematic Program Design.
 
 > Writing code systematically follows the idea that the design of a function can be based on the sum of one or more templates and details that enables the program designer to think about programs in terms of higher level structures or models.
 
-The code is currently written in BSL/ISL/ASL since those are the languages used to teach Systematic Program Design at the University of British Columbia, along with the corresponding UBCx course. To run the codes presented in this repo you need to install Dr.Racket.
+The code is currently written in BSL/ISL/ASL since those are the languages used to teach Systematic Program Design at the University of British Columbia along with the corresponding UBCx course. To run the codes presented in this repo you will need to install Dr.Racket.
 
 Note that the entire SPD path has been recently restructured into a new set of 6 courses.
 
@@ -30,8 +30,6 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 10a. Generative Recursion
 - 10b. Search & Lambda
 - 11 . Accumulators
------
-- 11 . Graphs
 
 ## 01a. BSL Fundamentals
 Systematic Program Design is taught through a language called BSL at first, for Beginner Student Language. The language will later be extended to Intermediary Student Language, and Advanced Student Language.
@@ -204,10 +202,7 @@ This module shows applications for three kinds of accumulators:
 2. Delete part of template wrapping around recursive call.
 3. Computation that would have been around recursive call moves to be in accumulator argument position.
 
---------
-
-
-## 11. Graphs
-Information may naturally organize into trees of various kinds. When elements and/or properties of an information set are interrelated with more than one vector to the parent elements, we say that they take the form of graphs. Those data structures are generally defined as cyclic or directed graphs but there are of course acyclic graphs as well where data does not create opportunities for infinite loops.
+## 12. Graphs
+Information can be organized into trees of various kinds. When elements and/or properties of an information set are interrelated with more than one vector to the parent elements, we say that they take the form of graphs. Those data structures are generally defined as cyclic or directed graphs but there are of course acyclic graphs as well where data does not create opportunities for infinite loops.
 
 Graphs help representing complex data structures like maps, wiring diagrams, even labyrinths. In order to work on graphs we need to define a new type of data generically called cyclic data as well as develop functions capable of working on this new form of data.

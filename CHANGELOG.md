@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.30.0] - 2017-07-10
+### Added
+- 12. Graphs/graphs.rkt
+
+### Updated
+- README.md -
+
 ## [0.29.0] - 2017-07-05
 ### Added
 - 11. Accumulators/average.rkt
