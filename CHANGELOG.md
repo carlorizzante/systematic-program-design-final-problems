@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [UNRELEASED] - [0.32.0]
+### Updated
+- README.md - "06b. Final Problem..." renamed in "06b. Middleterm Problem..."
+
+## [0.31.1] - 2017-07-11
+### Updated
+- README.md - typos
+
 ## [0.31.0] - 2017-07-10
 ### Added
 - 13. Worked Problems/merge-sort.rkt

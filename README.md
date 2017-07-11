@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.31.0
+Release 0.31.1
 
 Notes and solutions for problems collected while studying Systematic Program Design.
 
@@ -22,7 +22,7 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 05a. Naturals
 - 05b. Helpers
 - 06a. Binary Search Trees
-- 06b. Final Problem - Space Invaders
+- 06b. Middleterm Problem - Space Invaders
 - 07 .  Mutual Reference
 - 08a. Two One-of Types
 - 08b. Local
@@ -32,6 +32,7 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 11 . Accumulators
 - 12 . Graphs
 - 13 . Worked Problems
+- 14 . Final Problem
 
 ## 01a. BSL Fundamentals
 Systematic Program Design is taught through a language called BSL at first, for Beginner Student Language. The language will later be extended to Intermediary Student Language, and Advanced Student Language.
@@ -108,7 +109,7 @@ In Systematic Program Design, the use of helpers is defined as Function Composit
 ## 06a. Binary Search Trees
 Binary Search Trees are a fundamental block in Computer Science. Even if we might not often have to directly handle data at low level, understanding how they are structured and how to work with them is greatly beneficial. Similar techniques can be applied to other fields.
 
-## 06b. Final Problem - Space Invaders
+## 06b. Middleterm Problem - Space Invaders
 Space Invaders is a simple game where the player defends against never ending waves of Space Villains coming from the sky. Arrows keys flip the direction towards which the player is sliding, on the bottom of the screen. Space Bar fires powerful energy beams that can destroy several foes at once. Game Over is if any of the Space Villains manages to reach the ground.
 
 Despite the simplicity of the game and its graphical aspect, the code itself has been quite a challenge. Especially the aspects related to managing movements of all elements in play, and collisions against the edge of the screen and agains each other. Events that consequently require a change of the State.
@@ -211,5 +212,3 @@ Graphs help representing complex data structures like maps, wiring diagrams, eve
 
 ## Worked Problems
 The section contains a solution for a merge-sort routine.
-
-## Final Problem

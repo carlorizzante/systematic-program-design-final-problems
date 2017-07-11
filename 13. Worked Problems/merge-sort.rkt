@@ -1,3 +1,7 @@
+;; Use native take and drop helpers
+; (require racket/list)
+
+
 ;; (Listof Number) -> (Listof Number)
 ;; Returns a sorted list of numbers
 ; (define (merge-sort lon) empty) ; stub
