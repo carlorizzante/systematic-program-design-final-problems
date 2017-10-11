@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.32.1] - 2017-10-11
+### Updated
+- Minor typos in README.md
+
 ## [0.32.0] - 2017-10-11
 ### Updated
 - README.md - "06b. Final Problem..." renamed in "06b. MiddleTerm Problem..."

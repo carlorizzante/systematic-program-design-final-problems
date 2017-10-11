@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.32.0
+Release 0.32.1
 
 Notes and solutions for problems collected while studying Systematic Program Design.
 
@@ -22,11 +22,11 @@ Note that the entire SPD path has been recently restructured into a new set of 6
 - 05a. Naturals
 - 05b. Helpers
 - 06a. Binary Search Trees
-- 06b. Middleterm Problem - Space Invaders
-- 07 .  Mutual Reference
+- 06b. MiddleTerm Problem - Space Invaders
+- 07 . Mutual Reference
 - 08a. Two One-of Types
 - 08b. Local
-- 09 .  Abstraction
+- 09 . Abstraction
 - 10a. Generative Recursion
 - 10b. Search & Lambda
 - 11 . Accumulators
