@@ -1,5 +1,5 @@
 # Systematic Program Design - Final Problems
-Release 0.31.1
+Release 0.32.0
 
 Notes and solutions for problems collected while studying Systematic Program Design.
 
